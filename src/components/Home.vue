@@ -1,11 +1,11 @@
 <template>
   <div >
-     <header class="py-5 text-center mx-auto mt-1 backImg" >
+     <header class="py-5 text-center mx-auto mt-1 backImg">
       <div class="container">
         <div class="row">
           <div class="p-5 mx-auto col-md-8 col-10 bgWi">
             <h3 class="display-3">Sistema de apoio ao visitante<br></h3>
-            <p class="mb-4">Encontre tudo que precisa para sua viagem aqui, hoteis, pontos turisticos, praias, hospitais e muito mais.</p> <a class="btn btn-primary" href="#nav">COMEÇAR<br></a>
+            <p class="mb-4">Encontre tudo que precisa para sua viagem aqui, hoteis, pontos turisticos, praias, hospitais e muito mais.</p> <a class="btn btn-primary" href="#nav"  tabindex="0">COMEÇAR<br></a>
           </div>
         </div>
       </div>

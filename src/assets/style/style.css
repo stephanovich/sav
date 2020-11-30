@@ -9,6 +9,9 @@ li{
     width: 80%;
     margin: 0 auto;
 }
+.fontEdit{
+  font-weight: bold;
+}
 .navBar{
     width: 100%;
 }
@@ -21,6 +24,9 @@ li{
 .margin-t05{
     margin-top: 5px;
 }
+.margin-l05{
+  margin-left: 5px;
+}
 .styck{
     position: sticky;
     top: 0;
@@ -31,9 +37,8 @@ li{
   
 }
 body{
-  background-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(3,232,255,1) 100%);
-  color: white;
-}
+  background: rgb(174,230,230);
+  background: linear-gradient(90deg, rgba(174,230,230,1) 0%, rgba(183,220,255,1) 100%);}
 .backImg{
   background-image: url(./image/rio-de-janeiro-1963744_1920.jpg);
   border-radius: 5px 5px 0 0;
@@ -48,14 +53,25 @@ body{
 @media (min-width: 320px) and (max-width:767px){
   #app{
     width: 100%;
+  
   }
   .display-3{
     font-size: 2.5rem;
+  }
+  .mapa{
+    width: 100% !important;
+    height: 320px !important;
+    margin: 10px auto;
+  }
+  .divMap{
+    margin:10px auto;
+    height: 380px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #app{
     width: 95%;
+    font-size: 1.3em;
   }
   .display-3{
     font-size: 2.5rem;
@@ -68,17 +84,27 @@ body{
   .display-3{
     font-size: 2.5rem;
   }
-}
-.tamMap{
-  width: 100%;
-  height: 640px;
+
 }
 .mapa{
-  width: 40rem;
-  height: 380px;
-  margin: auto;
-  padding-top: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 80%;
+  height: 520px;
+  margin: 10px auto;
+  /* padding-top: 20px; */
 }
 .divMap{
-  height: 400px;
+  margin:10px auto;
+  height: 600px;
+}
+.center{
+  text-align: center;
+}
+.cap{
+  text-transform: capitalize;
+}
+.w-85{
+  width: 85%;
+  margin: 0 auto;
 }

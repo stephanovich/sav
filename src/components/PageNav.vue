@@ -1,21 +1,15 @@
 <template>
- <!-- <div id="hospitais" class="d-flex justify-content-center">
-    <div class="m-4">
-      <h1>Hospitais</h1>
-      <div class="mapa d-flex m-4">
-        <Mapa tipo="hospitais" />
-      </div>
-    </div>
-  </div> -->
   <div>
     <div>
       <Nav/>
-      <p>{{lerMapa}}</p>
     </div>
-    <div class="divMap bg-dark borderR">
+    <div class="divMap bg-light borderR">
+      <div class="center cap">
+        <h2>{{lerMapa}}</h2>
         <div class="mapa">
-        <Mapa :tipo="lerMapa" />
-    </div>
+          <Mapa :tipo="lerMapa" />
+        </div>
+      </div>
     </div>
   </div>
 </template>

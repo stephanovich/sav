@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class="bg-dark py-2 mx-auto mt-3 mb-1 borderR">
+    <footer class="bg-light py-2 mx-auto mt-3 mb-1 borderR">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-6 p-3">
@@ -15,8 +15,7 @@
           <div class="col-lg-6 col-6 p-3">
             <h5> <b>Suporte</b><br></h5>
             <ul class="list-unstyled">
-              <li> <a href="#">Formulario de contato</a><br></li>
-              <li> <a href="#">Mapa do site<br></a> </li>
+              <li><router-link tabindex="20" tag="a" to="/form">Formulario de contato</router-link><br></li>
             </ul>
           </div>
         </div>

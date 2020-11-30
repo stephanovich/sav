@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div class="bg-dark mx-auto mt-3 py-3 borderR">
+    <div class="bg-light mx-auto mt-3 py-3 borderR">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -70,7 +70,5 @@ export default {
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 </style>
