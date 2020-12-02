@@ -15,7 +15,7 @@
           <div class="col-lg-6 col-6 p-3">
             <h5> <b>Suporte</b><br></h5>
             <ul class="list-unstyled">
-              <li><router-link tabindex="20" tag="a" to="/form">Formulario de contato</router-link><br></li>
+              <li><router-link tabindex="10" tag="a" to="/form" title="Link para o formulário de contato">Formulario de contato</router-link><br></li>
             </ul>
           </div>
         </div>

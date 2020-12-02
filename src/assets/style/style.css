@@ -1,10 +1,3 @@
-ul{
-    margin: auto;
-}
-li{
-  margin: 0;
-  padding: 0;
-}
 #app{
     width: 80%;
     margin: 0 auto;
@@ -55,6 +48,9 @@ body{
     width: 100%;
   
   }
+  .w-50{
+    width: 100% !important;
+  }
   .display-3{
     font-size: 2.5rem;
   }
@@ -71,7 +67,6 @@ body{
 @media (min-width: 768px) and (max-width: 1023px) {
   #app{
     width: 95%;
-    font-size: 1.3em;
   }
   .display-3{
     font-size: 2.5rem;
@@ -92,7 +87,6 @@ body{
   width: 80%;
   height: 520px;
   margin: 10px auto;
-  /* padding-top: 20px; */
 }
 .divMap{
   margin:10px auto;
@@ -100,6 +94,7 @@ body{
 }
 .center{
   text-align: center;
+  margin: 0 auto;
 }
 .cap{
   text-transform: capitalize;
@@ -107,4 +102,24 @@ body{
 .w-85{
   width: 85%;
   margin: 0 auto;
+}
+.w-50{
+  width: 50%;
+}
+.auto{
+  margin: 10px auto;
+}
+.b{
+  border: 1px solid;
+  border-radius: 5px;
+}
+.p{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.m00{
+  margin-top: 0;
+  padding-top: 0;
 }

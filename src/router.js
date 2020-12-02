@@ -3,6 +3,7 @@ import Home from './components/Home';
 import PageNav from './components/PageNav';
 import Nav from './components/Nav'
 import Form from './components/Form'
+import Login from './components/Login'
 
 export default new VueRouter({
     mode : 'history',
@@ -26,6 +27,11 @@ export default new VueRouter({
             path: '/form',
             name: 'form',
             component: Form
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login
         }
     ]
 })

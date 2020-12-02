@@ -1,15 +1,10 @@
 <template>
-  <l-map
-    :zoom="zoom"
-    :center="getLocalAtual"
-    @update:center="updateCenter"
-    @update:zoom="updateZoom"
-  >
+  <l-map :zoom="zoom" :center="getLocalAtual">
     <LTileLayer :url="url" :attribution="attribution" />
-    <LMarker v-for="marcador in getTipo(tipo)" :key="marcador.nome" :lat-lng="marcador.coordenada">
+    <LMarker v-for="p in getTipo(tipo)" :key="p.nome" :lat-lng="p.cord">
       <LPopup>
         <div>
-          {{marcador.nome}}
+          {{'Local: ' + p.nome}}
         </div>
       </LPopup>
     </LMarker>
@@ -18,9 +13,8 @@
 </template>
 <script>
 import { latLng, Icon } from "leaflet";
-import { LMap, LTileLayer } from "vue2-leaflet";
+import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
 import { mapGetters } from "vuex";
-import { LMarker, LPopup } from "vue2-leaflet";
 
 delete Icon.Default.prototype._getIconUrl;
 Icon.Default.mergeOptions({
@@ -45,17 +39,7 @@ export default {
       url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      currentZoom: 10,
-      currentCenter: latLng(-22.9756619, -43.2303642),
     };
-  },
-  methods: {
-    updateZoom(zoom) {
-      this.currentZoom = zoom;
-    },
-    updateCenter(center) {
-      this.currentCenter = center;
-    }
   },
   computed: mapGetters([
     "getLocalAtual",
