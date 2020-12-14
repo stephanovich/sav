@@ -4,6 +4,7 @@ import PageNav from './components/PageNav';
 import Nav from './components/Nav'
 import Form from './components/Form'
 import Login from './components/Login'
+import Cadastro from './components/Cadastro'
 
 export default new VueRouter({
     mode : 'history',
@@ -32,6 +33,12 @@ export default new VueRouter({
             path: '/login',
             name: 'login',
             component: Login
+        },
+        {
+            path: '/cadastro',
+            name: 'cadastro',
+            component: Cadastro
+
         }
     ]
 })
